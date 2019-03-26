@@ -1,0 +1,21 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "org.template.vanilla.VanillaEngine",
+  "datasource": {
+    "params" : {
+      "appName": "L_R_S"
+    }
+  },
+  "algorithms": [
+    {
+      "name": "algo",
+      "params": {
+        "iterations": 10,
+        "regParam" : 1.2, 
+        "miniBatchFraction": 0.5, 
+        "stepSize": 1e-11
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+
+package org.template.vanilla
+
+
+import org.apache.predictionio.controller.EngineFactory
+import org.apache.predictionio.controller.Engine
+
+class Query(
+  val features: Array[Double]
+) extends Serializable
+
+class PredictedResult(
+  val label: Double
+  //,val intercept : Double, 
+  //val weightsData: Array[Double]
+  ) extends Serializable
+
+class ActualResult(
+  val label: Double
+) extends Serializable
+
+
+object VanillaEngine extends EngineFactory {
+  def apply() = {
+    new Engine(
+      classOf[DataSource],
+      classOf[Preparator],
+      Map("algo" -> classOf[algo]),
+      classOf[Serving])
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id":"org.template.vanilla.RMSEEvaluation$ 2019-03-26T11:10:34.745+05:30",
+  "description":"",
+  "engineFactory":"org.template.vanilla.RMSEEvaluation$",
+  "datasource":{
+    "name":"",
+    "params":{
+      "appName":"L_R_S",
+      "evalK":5
+    }
+  },
+  "preparator":{
+    "name":"",
+    "params":{
+      
+    }
+  },
+  "algorithms":[
+    {
+      "name":"algo",
+      "params":{
+        "iterations":10,
+        "regParam":1.2,
+        "miniBatchFraction":0.5,
+        "stepSize":1.0E-11
+      }
+    }
+  ],
+  "serving":{
+    "name":"",
+    "params":{
+      
+    }
+  }
+}
